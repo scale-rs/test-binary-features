@@ -30,7 +30,7 @@ pub type ChildInfo = String;
 /// #[repr(transparent)]
 /// pub struct ChildInfoMeta<M> {
 ///     /* Not called `it`, so as not to confuse it with iterators.*/
-///     pub its: ChildInfoMetaTuple<M>,
+///     pub its: (M, /*...*/),
 /// }
 /// ```
 /// However, that would be useful mostly for either
@@ -94,15 +94,15 @@ where
 /// Implementing [Deref] and [DerefMut] doesn't improve ergonomics for accessing the tuple's field
 /// by numeric index. For that we have to put the dereferencing asterisk and the struct instance
 /// into parenthesis, e.g.
-/// ```rust
+///
 /// let wrap: ChildInfoMetaWrap = ...;
 /// meta = (*wrap).2;
-/// ```
+///
 /// So we may just as well use
-/// ```rust
+///
 /// let wrap: ChildInfoMetaWrap = ...;
 /// meta = wrap.0.2;
-/// ```
+///
 /// - a little easier to type and read. However, we really want to use our named accessor methods.
 ///
 /// But dereferencing with asterisk is ergonomic when we need to cast the struct back to the tuple
