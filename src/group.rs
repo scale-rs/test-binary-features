@@ -91,23 +91,6 @@ where
     }
 }
 
-/// Implementing [Deref] and [DerefMut] doesn't improve ergonomics for accessing the tuple's field
-/// by numeric index. For that we have to put the dereferencing asterisk and the struct instance
-/// into parenthesis, e.g.
-///
-/// let wrap: ChildInfoMetaWrap = ...;
-/// meta = (*wrap).2;
-///
-/// So we may just as well use
-///
-/// let wrap: ChildInfoMetaWrap = ...;
-/// meta = wrap.0.2;
-///
-/// - a little easier to type and read. However, we really want to use our named accessor methods.
-///
-/// But dereferencing with asterisk is ergonomic when we need to cast the struct back to the tuple
-/// type.
-
 /// Group of active (running) Child processes.
 ///
 /// NOT [std::collections::HashSet], because that makes referencing the items less efficient.
