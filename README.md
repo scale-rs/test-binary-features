@@ -6,20 +6,20 @@ with one `cargo test`.
 You'll need to set up auxiliary crates. Also, this can't run unit tests (`#[test]`) as-is - you'll
 need to refactor those functions and have them called from binary crate(s) within the same project.
 
-[![Documentation](https://img.shields.io/badge/docs-master-blue.svg)](Documentation)
+[![Documentation](https://img.shields.io/badge/docs-master-blue.svg)][Documentation]
 ![License](https://img.shields.io/crates/l/test-binary-features.svg) [![Crates
 Status](https://img.shields.io/crates/v/test-binary-features.svg)][Crates.io]
 
 Based on [crates.io/crates/test-binary](https://crates.io/crates/test-binary)
-[gitlab.com/rust-test-binary/test-binary](https://gitlab.com/rust-test-binary/test-binary).
+([gitlab.com/rust-test-binary/test-binary](https://gitlab.com/rust-test-binary/test-binary)).
 
 ## License
 
 Licensed under either of
 
- * Apache License, Version 2.0, ([LICENSE-APACHE](LICENSE-APACHE) or
-   http://www.apache.org/licenses/LICENSE-2.0)
- * MIT license ([LICENSE-MIT](LICENSE-MIT) or http://opensource.org/licenses/MIT)
+* Apache License, Version 2.0, ([LICENSE-APACHE](LICENSE-APACHE) or
+   <http://www.apache.org/licenses/LICENSE-2.0)>
+* MIT license ([LICENSE-MIT](LICENSE-MIT) or <http://opensource.org/licenses/MIT>)
 
 at your option.
 
