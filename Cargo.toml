@@ -17,15 +17,26 @@ include = [
 ]
 
 [package]
-name = "PROJECT"
+name = "test-binary-features"
 version = "0.0.1"
-description = "DESCRIPTION"
-categories = []
-keywords = []
+description = "Programmatic testing of Rust binary crate features"
+keywords = [
+    "test",
+    "testing",
+    "cargo",
+    "binary",
+    "integration",
+]
+categories = [
+    "development-tools",
+    "development-tools::testing",
+]
 license.workspace = true
 edition.workspace = true
 rust-version.workspace = true
 include.workspace = true
+repository = "https://github.com/scale-rs/test-binary-features"
+authors = ["Peter Kehl <peter.kehl@gmail.com>"]
 
 [package.metadata.docs.rs]
 all-features = true
@@ -44,5 +55,9 @@ pre-release-replacements = [
 default = []
 
 [dependencies]
+test-binary = "3.0.1"
+thiserror = "1.0.48"
+phantom_newtype = "0.2.0"
 
 [dev-dependencies]
+
