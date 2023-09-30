@@ -11,7 +11,8 @@ need to refactor those functions and have them called from binary crate(s) withi
 Status](https://img.shields.io/crates/v/test-binary-features.svg)][Crates.io]
 
 Based on [crates.io/crates/test-binary](https://crates.io/crates/test-binary)
-([gitlab.com/rust-test-binary/test-binary](https://gitlab.com/rust-test-binary/test-binary)).
+([gitlab.com/rust-test-binary/test-binary](https://gitlab.com/rust-test-binary/test-binary)). Using
+[epage/_rust](https://github.com/epage/_rust) Rust project template.
 
 ## License
 
