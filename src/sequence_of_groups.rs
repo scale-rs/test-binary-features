@@ -12,10 +12,10 @@ pub fn sequence_single_tasks<
     #[allow(non_camel_case_types)] FEATURE_SET,
     #[allow(non_camel_case_types)] FEATURE_SETS,
 >(
-    parent_dir: &S,
-    sub_dir: &S,
-    feature_sets: FEATURE_SETS,
-    group_until: GroupEnd,
+    _parent_dir: &S,
+    _sub_dir: &S,
+    _feature_sets: FEATURE_SETS,
+    _group_until: GroupEnd,
 ) where
     S: Borrow<str> + 's + ?Sized,
     FEATURE_SET: IntoIterator<Item = &'s S>,

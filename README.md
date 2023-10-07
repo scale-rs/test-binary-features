@@ -14,6 +14,11 @@ Based on [crates.io/crates/test-binary](https://crates.io/crates/test-binary)
 ([gitlab.com/rust-test-binary/test-binary](https://gitlab.com/rust-test-binary/test-binary)). Using
 [epage/_rust](https://github.com/epage/_rust) Rust project template.
 
+## Limitation: cargo check
+
+`cargo check` run on a crate that uses `test-binary-features` to invoke any other crates can't check
+(traverse) those other crates.
+
 ## License
 
 Licensed under either of

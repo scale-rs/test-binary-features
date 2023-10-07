@@ -2,7 +2,6 @@ use crate::indicators::{BinaryCrateName, GroupEnd, SpawningMode};
 use crate::output::{DynErr, DynErrResult, OptOutput, ProcessOutput};
 use crate::task;
 use core::borrow::Borrow;
-use core::ops::{Deref, DerefMut};
 use core::time::Duration;
 use phantom_newtype::Id;
 use std::collections::HashMap;
@@ -177,7 +176,7 @@ pub(crate) fn try_finished_child<M>(
     Ok(None)
 }
 
-pub(crate) fn print_output(output: &ProcessOutput) -> IoResult<()> {
+pub(crate) fn _print_output(output: &ProcessOutput) -> IoResult<()> {
     // If we have both non-empty stdout and stderr, print stdout first, and stderr second. That way
     // the developer is more likely to notice (and there is less vertical distance to scroll up).
     {

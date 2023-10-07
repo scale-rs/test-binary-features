@@ -11,11 +11,11 @@
 #![cfg_attr(docsrs, feature(doc_auto_cfg))]
 
 pub mod group;
-mod group_of_sequences_of_groups;
-mod indicators;
-mod output;
+pub mod group_of_sequences_of_groups;
+pub mod indicators;
+pub mod output;
 mod run;
-mod sequence_of_groups;
+pub mod sequence_of_groups;
 mod task;
 #[cfg(test)]
 mod unit_tests;

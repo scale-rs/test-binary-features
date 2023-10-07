@@ -18,7 +18,7 @@ include = [
 
 [package]
 name = "test-binary-features"
-version = "0.0.1"
+version = "0.0.2"
 description = "Programmatic testing of Rust binary crate features"
 keywords = [
     "test",
